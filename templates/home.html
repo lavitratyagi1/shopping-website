@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Website | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home_styles.css') }}">
+</head>
+<body>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+          <li class="flash-messages">{{ messages[0] }}</li>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <!-- Hero Section -->
+  <section class="hero">
+    {% if not session.logged_in %}
+      <div class="login">
+        <a href="login" class="button">Login</a>
+      </div>
+    {% else %}
+      <div class="login">
+        <a href="logout" class="button">Logout</a>
+      </div>
+    {%endif%}
+    
+    <div class="hero-content">
+      <h1>Welcome to Our Shopping Website</h1>
+      <p>Discover the Best Deals and Quality Products</p>
+      <a href="product" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Categories Section -->
+  <section class="featured-categories">
+    <h2>Featured Categories</h2>
+    <div class="category-grid">
+      <!-- Add featured categories with images -->
+      <div class="category-card">
+        <a href="clothes">
+        <img src="{{ url_for('static', filename='images/clothes.png') }}" alt="Category 1">
+        <h3> CLOTHES </h3>
+        </a>
+      </div>
+      <div class="category-card">
+        <a href="footwear">
+        <img src="{{ url_for('static', filename='images/footwear.png') }}" alt="Category 2">
+        <h3> FOOTWEAR </h3>
+        </a>
+      </div>
+      <div class="category-card">
+        <a href="electronics">
+        <img src="{{ url_for('static', filename='images/electronics.png') }}" alt="Category 3">
+        <h3> ELECTRONICS </h3>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotions and Discounts Section -->
+  <section class="promotions">
+    <h2>Promotions and Discounts</h2>
+    <div class="promotion-grid">
+      <!-- Add promotions and discounts with images -->
+      <div class="promotion-card">
+        <img src="promotion1.jpg" alt="Promotion 1">
+        <h3>Offer 1</h3>
+      </div>
+      <div class="promotion-card">
+        <img src="promotion2.jpg" alt="Promotion 2">
+        <h3>Offer 2</h3>
+      </div>
+      <div class="promotion-card">
+        <img src="promotion3.jpg" alt="Promotion 3">
+        <h3>Offer 3</h3>
+      </div>
+      <div class="promotion-card">
+        <img src="promotion4.jpg" alt="Promotion 4">
+        <h3>Offer 4</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals of the Day Section -->
+  <section class="deals-of-the-day">
+    <h2>Deals of the Day</h2>
+    <div class="deals-grid">
+      <!-- Add daily deals with images -->
+      <div class="deal-card">
+        <img src="deal1.jpg" alt="Deal 1">
+        <h3>Deal 1</h3>
+      </div>
+      <div class="deal-card">
+        <img src="deal2.jpg" alt="Deal 2">
+        <h3>Deal 2</h3>
+      </div>
+      <div class="deal-card">
+        <img src="deal3.jpg" alt="Deal 3">
+        <h3>Deal 3</h3>
+      </div>
+      <div class="deal-card">
+        <img src="deal4.jpg" alt="Deal 4">
+        <h3>Deal 4</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Search Section -->
+  <section class="product-search">
+    <h2>Find Your Perfect Product</h2>
+    <form class="search-form" action="#" method="get">
+      <input type="text" name="search" placeholder="Enter Product Name">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nunc vel massa facilisis posuere eu eu velit. Phasellus id turpis in eros pellentesque mattis. Sed at mauris et velit suscipit aliquam. Suspendisse potenti. Nulla facilisi. Aliquam erat volutpat. Nam condimentum finibus elit, euismod sollicitudin tellus aliquam vitae. Sed id tincidunt dolor. Integer eu fermentum ex. Nulla facilisi. Integer ac dolor eu eros auctor iaculis nec ut odio.</p>
+  </section>
+
+</body>
+</html>

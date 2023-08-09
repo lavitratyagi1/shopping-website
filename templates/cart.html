@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Product Listing - Shopping Website</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <!-- Header content goes here -->
+  </header>
+
+  <nav>
+    <!-- Navigation menu goes here -->
+  </nav>
+
+  <main class="product-grid">
+ 
+          {% for product in products %}
+            <div class="card">
+              <div class="card-img"><img src="{{ url_for('static', filename='/images/products/'+product[0]+'.jpg') }}"></div>
+              <div class="card-info">
+                <p class="text-title">{{ product[0] }} </p>
+                <p class="text-body">{{ product[2] }}</p>
+              </div>
+              <div class="card-footer">
+              <span class="price">₹{{ product[1] }}</span>
+              </div>
+              <p class="quantity">Quantity : {{ product[3]}}</p>
+            </div>
+          {% endfor %}
+
+      <!-- Add more product blocks as needed -->
+
+  </main>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/product_script.js') }}"></script>
+</body>
+</html>

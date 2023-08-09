@@ -1,0 +1,236 @@
+/* Add your custom CSS styles here */
+/* Styles for the hero section */
+.hero {
+    position: relative;
+    height: 600px;
+    background-color: #e0daa8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff1144;
+  }
+  .button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 12px 24px;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* Styles for featured categories section */
+  .featured-categories {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .featured-categories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .category-card {
+    text-align: center;
+  }
+  
+  .category-card img {
+    margin-left: 80px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 10px;
+  }
+  
+  .category-card h3 {
+    font-size: 18px;
+    margin-left: 80px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  /* Styles for promotions section */
+  .promotions {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .promotions h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .promotion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .promotion-card {
+    text-align: center;
+  }
+  
+  .promotion-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .promotion-card h3 {
+    font-size: 18px;
+  }
+  
+  /* Styles for deals of the day section */
+  .deals-of-the-day {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .deals-of-the-day h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .deal-card {
+    text-align: center;
+  }
+  
+  .deal-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .deal-card h3 {
+    font-size: 18px;
+  }
+  
+  /* Styles for product search section */
+  .product-search {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .product-search h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #ff1144;
+  }
+  
+  /* Styles for about us section */
+  .about-us {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .about-us h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+
+  /*Alert message */
+  .flash-messages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #52eb3e;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    width: 300px;
+    margin: 10px auto;
+  }
